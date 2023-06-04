@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div class="notebook">
+        <!-- <a href="./index.html" class="next">Back</a> -->
+        <div class="naotebook-main">
+            <h1 class="headingbook">Note Book</h1>
+            <div class="userinfo">
+                <div class="userinfo-main">
+                    <span class="grycolor labeldata">User Name : </span>
+                    <h1 id="userName"></h1>
+                </div>
+                <div class="userinfo-main" >
+                    <span class="grycolor labeldata" >Budget Amount : </span>
+                    <h1 id="userBudgert"></h1>
+                </div>
+                <div class="userinfo-main" >
+                    <span class="grycolor labeldata" >Expense Amount : </span>
+                    <h1 id="expenseam"></h1>
+                </div>
+
+            </div>
+            <div id="liparent">
+                <input type="text" id="input" placeholder="Title">
+                <input type="number" id="input1" placeholder="Enter Amount">
+            </div>
+
+            <button onclick="addTodo()" class="addbtn">ADD</button>
+            <button onclick="delAll()" class="dtlbtm">DELETE All</button>
+
+            <div>
+                <div id="listBox"></div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="balanceamount">
+        <div class="userinfo-main">
+            <span class="grycolor labeldata">Balance : </span>
+            <h1 id="balanceamount"></h1>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
